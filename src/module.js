@@ -15,7 +15,7 @@ class Ctrl extends MetricsPanelCtrl {
     super($scope, $injector);
 	this.message = "nice!";
 	console.log('hello from console!');
-	$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";
+	//$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";
     this.events.on('data-received', this._onDataReceived.bind(this));
   }
   _onDataReceived(data) {
