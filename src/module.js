@@ -42,4 +42,4 @@ class Ctrl extends MetricsPanelCtrl {
 
 Ctrl.templateUrl = 'partials/template.html';
 
-export { Ctrl as MetricsPanelCtrl }
+export { Ctrl as PanelCtrl }
