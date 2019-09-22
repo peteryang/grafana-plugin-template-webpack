@@ -11,11 +11,10 @@ import './css/panel.light.scss';
 
 class Ctrl extends MetricsPanelCtrl {
 
-  constructor($scope, $injector, NgMap) {
+  constructor($scope, $injector) {
     super($scope, $injector);
 	this.message = "nice!";
 	
-	console.log(NgMap);
 	console.log('hello from console!');
 	//$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";
     this.events.on('data-received', this._onDataReceived.bind(this));
