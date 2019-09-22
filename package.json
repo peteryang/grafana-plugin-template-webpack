@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "Alexey Velikiy",
   "license": "MIT",
-  "repository": "https://github.com/CorpGlory/grafana-plugin-template-webpack",
+  "repository": "https://github.com/peteryang/grafana-plugin-template-webpack",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -24,5 +24,7 @@
     "style-loader": "^0.20.1",
     "webpack": "^3.6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ngmap": "^1.18.5"
+  }
 }
