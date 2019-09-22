@@ -1,6 +1,6 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
-import * as _ from "../node_modules/ngmap";
+import * as ngMap from "../node_modules/ngmap";
 
 
 import './css/panel.base.scss';
@@ -14,6 +14,7 @@ class Ctrl extends MetricsPanelCtrl {
   constructor($scope, $injector) {
     super($scope, $injector);
 	this.message = "nice!";
+	console.log(ngMap);
 	console.log('hello from console!');
 	//$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";
     this.events.on('data-received', this._onDataReceived.bind(this));
