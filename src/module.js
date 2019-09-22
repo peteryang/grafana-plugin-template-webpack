@@ -1,4 +1,4 @@
-import { PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
+import { MetricsPanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
 import './css/panel.base.scss';
 // Remove next imports if you don't need separate styles for light and dark themes
@@ -6,13 +6,16 @@ import './css/panel.dark.scss';
 import './css/panel.light.scss';
 // Remove up to here
 
-class Ctrl extends PanelCtrl {
+class Ctrl extends MetricsPanelCtrl {
 
   constructor($scope, $injector) {
     super($scope, $injector);
 	console.log('hello from console!');
+    this.events.on('data-received', this._onDataReceived.bind(this));
   }
-
+  _onDataReceived(data) {
+    console.log(data);
+  }
   link(scope, element) {
     this.initStyles();
   }
@@ -39,4 +42,4 @@ class Ctrl extends PanelCtrl {
 
 Ctrl.templateUrl = 'partials/template.html';
 
-export { Ctrl as PanelCtrl }
+export { Ctrl as MetricsPanelCtrl }
