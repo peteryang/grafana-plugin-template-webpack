@@ -10,7 +10,7 @@ class Ctrl extends PanelCtrl {
 
   constructor($scope, $injector) {
     super($scope, $injector);
-	console.log('hello from console');
+	console.log('hello from console!');
   }
 
   link(scope, element) {
