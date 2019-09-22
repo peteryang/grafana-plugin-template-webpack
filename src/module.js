@@ -1,5 +1,8 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
+import * as _ from "ngMap";
+
+
 import './css/panel.base.scss';
 // Remove next imports if you don't need separate styles for light and dark themes
 import './css/panel.dark.scss';
@@ -12,6 +15,7 @@ class Ctrl extends MetricsPanelCtrl {
     super($scope, $injector);
 	this.message = "nice!";
 	console.log('hello from console!');
+	$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";
     this.events.on('data-received', this._onDataReceived.bind(this));
   }
   _onDataReceived(data) {
