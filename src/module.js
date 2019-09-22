@@ -10,6 +10,7 @@ class Ctrl extends MetricsPanelCtrl {
 
   constructor($scope, $injector) {
     super($scope, $injector);
+	this.message = "nice!";
 	console.log('hello from console!');
     this.events.on('data-received', this._onDataReceived.bind(this));
   }
