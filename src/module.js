@@ -12,7 +12,9 @@ import './css/panel.light.scss';
 
 console.log(typeof ngmap);
 console.log(ngmap);
-
+for (variable in ngmap) {
+	console.log(variable);
+}
 class Ctrl extends MetricsPanelCtrl {
 
   constructor($scope, $injector ) {
