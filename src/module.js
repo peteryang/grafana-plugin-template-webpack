@@ -10,6 +10,7 @@ import './css/panel.dark.scss';
 import './css/panel.light.scss';
 // Remove up to here
 
+console.log(typeof ngmap);
 console.log(ngmap);
 
 class Ctrl extends MetricsPanelCtrl {
