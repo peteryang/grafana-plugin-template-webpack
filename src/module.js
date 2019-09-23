@@ -1,6 +1,6 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
-import * as translator from 'public/text';
+import * as ngmap from '../node_modules/ngmap/build/scripts/ng-map.js';
 
 
 
@@ -10,7 +10,7 @@ import './css/panel.dark.scss';
 import './css/panel.light.scss';
 // Remove up to here
 
-console.log(translator);
+console.log(ngmap);
 
 class Ctrl extends MetricsPanelCtrl {
 
