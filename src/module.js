@@ -1,6 +1,6 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
-import * as translator from text;
+import * as translator from 'text';
 
 
 
