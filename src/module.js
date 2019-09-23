@@ -1,6 +1,5 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
-import * as _ from "../node_modules/ngmap";
 
 
 import './css/panel.base.scss';
