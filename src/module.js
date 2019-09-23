@@ -1,5 +1,7 @@
 import { MetricsPanelCtrl, PanelCtrl } from 'grafana/app/plugins/sdk'; // will be resolved to app/plugins/sdk
 
+import * as translator from text;
+
 
 
 import './css/panel.base.scss';
@@ -8,9 +10,11 @@ import './css/panel.dark.scss';
 import './css/panel.light.scss';
 // Remove up to here
 
+console.log(translator);
+
 class Ctrl extends MetricsPanelCtrl {
 
-  constructor($scope, $injector) {
+  constructor($scope, $injector ) {
     super($scope, $injector);
 	this.message = "nice!";
 	
